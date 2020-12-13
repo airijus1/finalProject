@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Settings</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <div class="container-fluid banner">
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+							<a class="navbar-brand" href="#">
+							<img src="reviewsystem\AvocadoLogo.png">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="welcome.php"> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="playList.html">Playlists</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="discover.php">Reviews</a>
+						</li>
+						<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Moods
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="happy.html">Happy</a>
+          <a class="dropdown-item" href="sad.html">Sad</a>
+          <a class="dropdown-item" href="calm.html">Calm</a>
+		  <a class="dropdown-item" href="#">Energetic</a>
+        </div>
+      </li>
+						<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Settings
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="logout.php">Logout</a>
+		  <a class="dropdown-item" href="settings.html">Settings</a>
+          
+        </div>
+      </li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" id="searchBoxId" placeholder="Search" aria-label="Search">
+						<a class="btn btn-outline-success my-2 my-sm-0" onclick="searchSpotify()">Search</a>
+					</form>
+				</div>
+			</nav>
+		</div>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Settings</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Customise your settings below, click the button to get started.</h2>
+                    <a class="btn btn-primary js-scroll-trigger" href="#projects">Click Here</a>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects" style="background-image: url('img_girl.jpg');">
+            <div class="container">
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-3 col-lg-3s"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/account.png" alt="" /></div>
+                    <div class="col-md-9">
+					 <div class="bg-black text-center h-100 project">
+                       <div class="d-flex h-100">
+                         <div class="project-text w-100 my-auto text-center text-lg-left">
+					
+                        <div class="bg-black featured-text text-center text-lg-left">
+                            <h4 class="text-white">Account Settings</h4>
+							<div><a href="#!">Change Email</a></div> <!-- NEED TO LINK PAGES-->
+							<div><a href="reset-password.php">Change Password</a></div> <!-- NEED TO LINK PAGES-->
+							<div><a href="#!">Delete Your Account</a></div> <!-- NEED TO LINK PAGES-->
+							<hr class="d-none d-lg-block mb-0 ml-0" />
+							
+						<div>
+						<p></p>
+							<div><a href="#!">Log Out</a></div> <!-- NEED TO LINK PAGES-->
+							
+						</div>
+						
+						
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-3 col-lg-3s"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/speaker.png" alt="" /></div>
+                    <div class="col-md-9">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+								<div class="bg-black featured-text text-center text-lg-left">
+                                    <h4 class="text-white">Customisation</h4>
+                                    <div><a href="#!">Create your bio</a></div> <!-- NEED TO LINK PAGES-->
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+               
+            </div>
+        </section>
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Join Avocado Music for better music</h2>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">Dublin 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50"><a href="#!">AvocadoMusic@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Avocado FM 2020</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

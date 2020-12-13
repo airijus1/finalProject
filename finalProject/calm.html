@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Avocado Music a vibrant new music web application</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/bartstylesheet.css" rel="stylesheet" />
+	
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <div class="container-fluid banner">
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+							<a class="navbar-brand" href="#">
+							<img src="reviewsystem\AvocadoLogo.png">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="welcome.php"> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="playList.html">Playlists</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="discover.php">Reviews</a>
+						</li>
+						<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Moods
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="happy.html">Happy</a>
+          <a class="dropdown-item" href="sad.html">Sad</a>
+          <a class="dropdown-item" href="calm.html">Calm</a>
+		  <a class="dropdown-item" href="energetic.html">Energetic</a>
+        </div>
+      </li>
+						<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Settings
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="logout.php">Logout</a>
+		  <a class="dropdown-item" href="settings.html">Settings</a>
+          
+        </div>
+      </li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" id="searchBoxId" placeholder="Search" aria-label="Search">
+						<a class="btn btn-outline-success my-2 my-sm-0" onclick="searchSpotify()">Search</a>
+					</form>
+				</div>
+			</nav>
+		</div>
+		
+		
+		
+		
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Avocado Music</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">A new easy way to listen to your favourite music made by Irish artists</h2>
+					<p>Calm Music:</p>
+					<?php foreach ($spotify as $spotify): ?>
+					<iframe src="https://open.spotify.com/embed/playlist/7LI3zw8HLkjKo5YpvA26KG" width="450" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+					<p>Calm Music from Soundcloud</p>
+                    <iframe width="450" height="250" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/186961216&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/beia-valeriu-ionut" title="Beia Valeriu Ionut" target="_blank" style="color: #cccccc; text-decoration: none;">Beia Valeriu Ionut</a> · <a href="https://soundcloud.com/beia-valeriu-ionut/smoke-the-herb-mega-mix-best-of-weed-songsweed-smokers-reggae-dancehall-mix-by-djeasy" title="Smoke The Herb Mega Mix Best Of Weed Songs[Weed Smokers Reggae Dancehall] Mix By Djeasy" target="_blank" style="color: #cccccc; text-decoration: none;">Smoke The Herb Mega Mix Best Of Weed Songs[Weed Smokers Reggae Dancehall] Mix By Djeasy</a></div>
+					
+							
+            </div>
+        </header>
+		
+		</div>
+		
+     
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Join Avocado Music for better music</h2>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+	   
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">Dublin 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50"><a href="#!">AvocadoMusic@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Avocado Music 2020</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+		<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+        <script src="bartjs/scripts.js"></script>
+    </body>
+</html>
